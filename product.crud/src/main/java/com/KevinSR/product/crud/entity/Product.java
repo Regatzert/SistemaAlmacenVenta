@@ -24,7 +24,7 @@ public class Product {
     @Column(name = "Precio")
     private Double Precio;
     @Column(name = "Laboratorio")
-    private String Laboratiorio;
+    private String Laboratorio;
     @Column(name = "Lote")
     private String Lote;
     @Column(name = "Cantidad")
@@ -35,13 +35,13 @@ public class Product {
     public Product() {}
 
     public Product( Integer codigo, String nombre, Date fVencimiento, Double precio,
-            String laboratiorio, String lote, Integer cantidad, Boolean activo) {
+            String laboratorio, String lote, Integer cantidad, Boolean activo) {
         super();
         Codigo = codigo;
         Nombre = nombre;
         FVencimiento = fVencimiento;
         Precio = precio;
-        Laboratiorio = laboratiorio;
+        Laboratorio = laboratorio;
         Lote = lote;
         Cantidad = cantidad;
         Activo = activo;
@@ -86,12 +86,12 @@ public class Product {
         Precio = precio;
     }
 
-    public String getLaboratiorio() {
-        return Laboratiorio;
+    public String getLaboratorio() {
+        return Laboratorio;
     }
 
-    public void setLaboratiorio(String laboratiorio) {
-        Laboratiorio = laboratiorio;
+    public void setLaboratorio(String laboratorio) {
+        Laboratorio = laboratorio;
     }
 
     public String getLote() {
